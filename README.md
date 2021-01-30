@@ -1,4 +1,4 @@
-What we have done in 2020 University Physics Competition.
+What we have done in the 2020 University Physics Competition.
 
 See our Modeling of quadcopter stability in wind [212B](https://jbox.sjtu.edu.cn/l/noXQ0r).
 
