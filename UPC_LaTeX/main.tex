@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} %handles figures
+\usepackage{anysize} %handles margins
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{framed}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{amsmath}
+\DeclareMathOperator{\sgn}{sgn}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{breqn}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{minted}
+
+
+% for formatting pseudocode
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+% header and footed
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+%\chead{\bfseries  Team No. 212}
+\rhead{Page \thepage\ of \pageref{LastPage}}
+\cfoot{}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+{\bf\large{Team No. 212}}
+
+\vspace{1em}
+
+{\large{Problem B}}
+
+
+\vspace{4em}
+{\Large{Quadcopter Stability in Wind}}
+\end{center}
+
+\vspace{5em}
+
+\input{Sections/Abstract}
+\newpage
+
+\tableofcontents
+\newpage
+
+\input{Sections/Introduction}
+
+\input{Sections/Model}
+
+\input{Sections/Results}
+
+\input{Sections/Discussion}
+
+\input{Sections/References}
+
+\newpage
+\appendix
+\section{Source Code}
+
+\begin{framed}
+\lstinputlisting[language=Python, caption= Source Code]{sim.py}
+\end{framed}
+\end{document}
